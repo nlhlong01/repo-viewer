@@ -1,13 +1,25 @@
-const Dropdown = () => {
+const Dropdown = (props) => {
+  const { category, options, selected, onSelectedChange } = props;
+
+  const listItems = options.map((option) => (
+    <li key={option}>
+      <a
+        className="dropdown-item"
+        href="#"
+        onClick={() => onSelectedChange(option)}
+      >
+        {option}
+      </a>
+    </li>
+  ));
+
   return (
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown button
+    <div className="dropdown">
+      <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        {`${category}: ${selected}`}
       </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        {listItems}
       </ul>
     </div>
   );
