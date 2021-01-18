@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Hypatos Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web page listing repositories from the official GitHub account of <b>Facebook</b>.
 
-## Available Scripts
+## Installing / Getting started
 
-In the project directory, you can run:
+`npm install`
 
-### `npm start`
+## Developing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Built with
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- react@17.0.1
 
-### `npm test`
+- create-react-app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- express@4.17.1
 
-### `npm run build`
+- GitHub's GraphQL API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Docker
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To be able to have access to the Github's API, you need to generate an access token from your account. Please see
+[here](https://github.com/settings/tokens). Select the <b>repo/public_repo</b> scope to allow adding or removing stars
+to and from the repos.
 
-### `npm run eject`
+Create an file name `.env` in the root node. Its content should be `REACT_APP_TOKEN='secret123'` where `secret123`
+should be replaced by the token you have just generated.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Setting up Dev
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Start the local dev server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`npm start`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Start the static file server:
 
-## Learn More
+`npm run start:server`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Deploying
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create a docker image named "hypatos-assignment":
 
-### Code Splitting
+`docker build -t hypatos-assignment .`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Start a container from this image:
 
-### Analyzing the Bundle Size
+`docker run -dp 3000:3000 hypatos-assignment`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open `localhost:3000`

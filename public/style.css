@@ -1,0 +1,56 @@
+.container {
+  max-width: 800px;
+}
+
+.btn {
+  transition: .2s cubic-bezier(.3,0,.5,1);
+  color: black;
+  background-color: white;
+  border: 1px solid #ced4da;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.btn:hover {
+  color:black;
+  background-color: #f3f4f6;
+}
+
+.btn:focus {
+  box-shadow: none;
+  color:black;
+  background-color: #f3f4f6;
+}
+
+.btn, .form-control {
+  border-radius: 6px;
+}
+
+.menu .menu-item {
+  padding: 0.5rem;
+}
+
+.menu .menu-item:first-child {
+  padding-left: 0;
+}
+
+.menu .menu-item:last-child {
+  padding-right: 0;
+}
+
+.dropdown-item {
+  border: 0;
+}
+
+.dropdown .selected {
+  opacity: 0.75;
+}
+
+.list-group-flush {
+  padding-left: 0;
+}
+
+.list-group-item {
+  padding: 0;
+}

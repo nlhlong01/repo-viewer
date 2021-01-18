@@ -1,22 +1,29 @@
+import React from 'react';
+
 const Dropdown = (props) => {
   const { category, options, selected, onSelectedChange } = props;
 
   const listItems = options.map((option) => (
     <li key={option}>
-      <a
-        className="dropdown-item"
-        href="#"
+      <button
+        className="dropdown-item btn"
         onClick={() => onSelectedChange(option)}
       >
         {option}
-      </a>
+      </button>
     </li>
   ));
 
   return (
     <div className="dropdown">
-      <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-        {`${category}: ${selected}`}
+      <button
+        className="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <span className="selected">{`${category}: `}</span> {selected}
       </button>
       <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
         {listItems}
