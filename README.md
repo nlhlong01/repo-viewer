@@ -1,4 +1,4 @@
-# Hypatos Assignment
+# Facebook Repos Viewer
 
 A web page listing repositories from the official GitHub account of <b>Facebook</b>.
 
@@ -26,7 +26,7 @@ To be able to have access to the Github's API, you need to generate an access to
 [here](https://github.com/settings/tokens). Select the <b>repo/public_repo</b> scope to allow adding or removing stars
 to and from the repos.
 
-Create an file name `.env` in the root node. Its content should be `REACT_APP_TOKEN='secret123'` where `secret123`
+Create an file name `.env` in the root folder. It should contain `REACT_APP_TOKEN='secret123'` where `secret123`
 should be replaced by the token you have just generated.
 
 ### Setting up Dev
