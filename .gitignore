@@ -24,9 +24,12 @@ yarn-error.log*
 .env
 .env.*
 
-#Build generated
+# Build generated
 dist/
 build/
+
+# Test coverage
+coverage/
 
 # Serverless generated files
 .serverless/

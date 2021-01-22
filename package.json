@@ -1,5 +1,5 @@
 {
-  "name": "hypatos-assignment",
+  "name": "repo-viewer",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -14,14 +14,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:headless": "BROWSER=none npm start",
     "build": "react-scripts build",
     "prestart:server": "npm run build",
     "start:server": "node src/server.js",
     "test:run": "cypress run",
     "test:open": "cypress open",
-    "test": "start-server-and-test start:headless http-get://localhost:3000 test:run",
-    "test:dev": "start-server-and-test start:headless http-get://localhost:3000 test:open",
+    "test": "start-server-and-test start http-get://localhost:3000 test:run",
+    "test:dev": "start-server-and-test start http-get://localhost:3000 test:open",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

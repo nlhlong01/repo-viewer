@@ -1,4 +1,4 @@
-# Facebook Repos Viewer
+# Repo Viewer
 
 A web page listing repositories from the official GitHub account of <b>Facebook</b>.
 
