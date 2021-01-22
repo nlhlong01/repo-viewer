@@ -50,3 +50,13 @@ Start a container from this image:
 `docker run -dp 3000:3000 hypatos-assignment`
 
 Open `localhost:3000`
+
+## Tests
+
+Tests are located at `cypress/integration`.
+
+Run E2E tests:
+
+`npm run test` to run the tests and exammine the results in the console.
+
+`npm run test:dev` to debug the tests with Cypress.
