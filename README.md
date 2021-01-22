@@ -43,11 +43,11 @@ should be replaced by the token you have just generated.
 
 Create a docker image named "hypatos-assignment":
 
-`docker build -t hypatos-assignment .`
+`docker build -t repo-viewer .`
 
 Start a container from this image:
 
-`docker run -dp 3000:3000 hypatos-assignment`
+`docker run -dp 3000:3000 repo-viewer`
 
 Open `localhost:3000`
 
