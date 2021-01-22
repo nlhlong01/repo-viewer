@@ -46,7 +46,7 @@ const StarButton = (props) => {
   return (
     <button
       type="button"
-      className="btn"
+      className="star-button btn"
       onClick={async () => onStarClick()}
     >
       {content}

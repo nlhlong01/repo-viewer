@@ -12,6 +12,7 @@ const repoTypes = {
 };
 
 const App = () => {
+  // Search term entered by the user.
   const [term, setTerm] = useState('');
   const [debouncedTerm, setDebouncedTerm] = useState(term);
   const [languages, setLanguages] = useState([]);
@@ -20,7 +21,7 @@ const App = () => {
   const [repos, setRepos] = useState([]);
 
   /**
-   * Look for the dominant languages in all repos.
+   * Look for the dominant languages in every repos.
    */
   useEffect(() => {
     const queryLanguages = async () => {
@@ -130,9 +131,10 @@ const App = () => {
     <div className="container">
       {/* Top menu */}
       <div className="menu d-flex bd-highlight border-bottom py-3">
-        {/* Search bar */}
+        {/* Search box */}
         <div className="menu-item flex-grow-1 bd-highlight">
           <input
+            id="search-box"
             className="form-control"
             value={term}
             placeholder="Find a repository..."

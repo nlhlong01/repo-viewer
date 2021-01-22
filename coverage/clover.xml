@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1611269639333" clover="3.2.0">
+  <project timestamp="1611269639333" name="All files">
+    <metrics statements="30" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="1" elements="43" coveredelements="13" complexity="0" loc="30" ncloc="30" packages="1" files="1" classes="1"/>
+    <file name="App.js" path="Z:\Workspace\hypatos-assignment\src\App.js">
+      <metrics statements="30" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="1"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="56" count="0" type="stmt"/>
+      <line num="57" count="0" type="stmt"/>
+      <line num="58" count="0" type="stmt"/>
+      <line num="59" count="0" type="stmt"/>
+      <line num="62" count="0" type="stmt"/>
+      <line num="65" count="0" type="stmt"/>
+      <line num="71" count="1" type="stmt"/>
+      <line num="72" count="0" type="stmt"/>
+      <line num="73" count="0" type="stmt"/>
+      <line num="76" count="0" type="stmt"/>
+      <line num="77" count="0" type="stmt"/>
+      <line num="81" count="1" type="stmt"/>
+      <line num="82" count="0" type="stmt"/>
+      <line num="83" count="0" type="stmt"/>
+      <line num="116" count="0" type="stmt"/>
+      <line num="117" count="0" type="stmt"/>
+      <line num="127" count="0" type="stmt"/>
+      <line num="130" count="1" type="stmt"/>
+      <line num="140" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>

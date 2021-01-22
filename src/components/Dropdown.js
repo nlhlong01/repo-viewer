@@ -6,6 +6,7 @@ const Dropdown = (props) => {
   const listItems = options.map((option) => (
     <li key={option}>
       <button
+        id={`filter-${category.toLowerCase()}-${option.toLowerCase()}`}
         className="dropdown-item btn"
         onClick={() => onSelectedChange(option)}
       >
@@ -15,7 +16,10 @@ const Dropdown = (props) => {
   ));
 
   return (
-    <div className="dropdown">
+    <div
+      id={`filter-${category.toLowerCase()}`}
+      className="dropdown"
+    >
       <button
         className="btn btn-secondary dropdown-toggle"
         type="button"
