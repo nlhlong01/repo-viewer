@@ -14,7 +14,7 @@ describe('Facebook Repo Viewer E2E Tests', function() {
         cy.get('#search-box').type('{selectAll}{del}');
       });
   
-      describe('Filtering search results', () => {
+      describe('Filtering search results', function() {
         it('should filter by type', function() {
           cy.get('#filter-type .dropdown-item').should('have.length', 5);
           cy.get('#filter-type').click();
@@ -33,7 +33,7 @@ describe('Facebook Repo Viewer E2E Tests', function() {
       });
     });
 
-    describe('(Un)starring a repo', () => {
+    describe('(Un)starring a repo', function() {
       it('should (un)star a repo', function() {
         cy.get('.list-group-item:nth-child(1) .star-button').click();
         cy.get('.list-group-item:nth-child(1) .star-button').click();
